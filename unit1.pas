@@ -38,7 +38,7 @@ implementation
 
 function Func(x:real):real;
 begin
-  result:=(sqr(x)*x)-sqr(x)-10;
+  result:=(sqr(x)*x)-sqr(x)-9.5;
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
