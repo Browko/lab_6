@@ -14,9 +14,9 @@ type
     Button1: TButton;
     Chart1: TChart;
     Chart1LineSeries1: TLineSeries;
-    Edit1: TEdit;                      {Левая граница}
-    Edit2: TEdit;                      {Правая граница}
-    Edit3: TEdit;                      {Точность}
+    Edit1: TEdit;                      
+    Edit2: TEdit;                    
+    Edit3: TEdit;                    
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
