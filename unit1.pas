@@ -38,7 +38,7 @@ type
 
   function Func(x:real):real;
   begin
-    result:=(sqr(x)*x)-sqr(x)-10;
+    result:=(sqr(x)*x)-sqr(x)-9.5;
   end;
 
   function func_pr(x:real):real;
