@@ -57,8 +57,8 @@ type
     rewrite(F);
     Chart1LineSeries1.Clear;
     Eps:=StrToFloat(Edit3.Text);
-    x_beg:=StrToFloat(Edit1.Text);
     x_end:=StrToFloat(Edit2.Text);
+    x_beg:=StrToFloat(Edit1.Text);
     x:=(x_end-x_beg)/15;
     repeat
       xn:=x;
@@ -78,9 +78,9 @@ type
             writeln(F,'x='+FloatToStr(x));
             Memo1.Lines.Add('x='+FloatToStr(x));
           end;
-    until abs(x-xn)<=Eps;
-    closefile(F);
-    showmessage('x='+ FloatToStr(x));
+    until abs(x-xn)>=Eps;
+    close(F);
+    showmessage('x='+ IntToStr(x));
   end;
 
   {$R *.lfm}
